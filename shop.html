@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="shop.css">
+    <title>caturpedia shop</title>
+</head>
+<body>
+    <nav>
+        <div class="navbar">
+            <div class="nav-brand">
+                <a href="#"
+                class="btn-menu" id="btn-menu">
+                <i class="fa-solid fa-bars"></i>
+                </a>
+                <h2>CaturPedia_Shop</h2>
+            </div>
+            <ul class="nav-menu" id="menubar">
+
+                <li><a href="index.html">CaturPedia</a></li>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#menu">collection</a></li>
+                <li><a href="#about">about</a></li>
+                <li><a href="#contact">contact</a></li>
+            </ul>
+            <div class="nav-btn">
+
+                <a href="#" class="btn-cart" id="btn-cart"><i class="fa-solid fa-cart-shopping"></i>
+                    <span class="cart-count" id="cart-count">0</span>
+                </a>
+            </div>
+        </div>
+
+
+        <div class="cart" id="cart">
+            <div class="cart-footer" style="margin-top: 20px; padding-top: 20px; border-top: 1px solid #555; ">
+                <div class="cart-total">
+                    <strong> Total: <span id="total-price">Rp 0</span> </strong>
+                </div>
+                <a href="addres.html" class="btn-checkout" id="btn-checkout">
+                    <i class="fa-solid fa-credit-card"></i> Checkout (0 item)
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <main id="home">
+        <div class="container">
+            <img src="./kud.png" alt="gambar">
+            <div class="tagline">
+                <p class="tag">Kendalikan Pusat, Sehatkan Mentalmu</p>
+                <h1>Mulai Investasi Cerdas Bentuk Mental Juara</h1>
+                <p class="deksripsi">Temukan koleksi perlengkapan catur terlengkap untuk mengasah strategi dan ketajaman berpikirmu. Kami menyediakan papan, aksesori, hingga literatur terbaik untuk mendukung perjalananmu menjadi seorang Master</p>    
+                <a href="#menu" class="btn-order">PESAN SEKARANG</a>  
+            </div>
+        </div>
+    </main>
+
+    <section id="menu">
+        <div class="container">
+            <p class="title">our collection</p>
+            <h2>koleksi terbaik kami</h2>
+            <div class="gallery">
+                <div class="card">
+                    <img src="./set.png" alt="gambar menu" class="detail-menu" width="300" 
+                     data-img="./set.png"
+                     data-title="set papan catur"
+                     data-price="Rp 200.000"
+                     data-desc="papan catur berkualitas"
+                     data-rating="4.5">
+                    <div class="menu-info">
+                        <h3>Set Papan Catur</h3>
+                        <span>Rp 200.000</span>
+                    </div>
+                    <div class="menu-info rating">
+                        <a href="#" class="cart-menu tambah-cart"
+                         data-img="./set.png"
+                         data-title="Set Papan Catur" 
+                         data-price="Rp 200.000">
+                            <i class="fa-solid fa-cart-plus"></i> tambah ke keranjang
+                        </a>
+                        <div class="menu-stars">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star-half-stroke"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="./baju.jpg" alt="gambar menu" class="detail-menu" width="300"
+                     data-img="./baju.jpg"
+                     data-title="kaos hitam"
+                     data-price="Rp 50.000"
+                     data-desc="baju hitam dengan kain berkualitas"
+                     data-rating="5">
+                    <div class="menu-info">
+                        <h3>kaos hitam</h3>
+                        <span>Rp 50.000</span>
+                    </div>
+                    <div class="menu-info rating">
+                        <a href="#" class="cart-menu tambah-cart"
+                         data-img="./baju.jpg"
+                         data-title="kaos hitam" 
+                         data-price="Rp 50.000">
+                         <i class="fa-solid fa-cart-plus"></i> tambah ke keranjang
+                        </a>
+                        <div class="menu-stars">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="./baju2.jpg" alt="gambar menu" class="detail-menu" width="300"
+                     data-img="./baju2.jpg"
+                     data-title="kaos putih"
+                     data-price="Rp 50.000"
+                     data-desc="kaos dengan bahan premium"
+                     data-rating="3.5">
+                    <div class="menu-info">
+                        <h3>kaos putih</h3>
+                        <span>Rp 50.000</span>
+                    </div>
+                    <div class="menu-info rating">
+                        <a href="#" class="cart-menu tambah-cart"
+                         data-img="./baju2.jpg"
+                         data-title="kaos putih" 
+                         data-price="Rp 50.000">
+                            <i class="fa-solid fa-cart-plus"></i> tambah ke keranjang
+                        </a>
+                        <div class="menu-stars">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star-half-stroke"></i>
+                            <i class="fa-regular fa-star"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="./book1.png" alt="gambar menu" class="detail-menu"
+                     data-img="./book1.png"
+                     data-title="menjadi master catur"
+                     data-price="Rp 30.000"
+                     data-desc="cara kamu menjadi master catur"
+                     data-rating="4.5">
+                    <div class="menu-info">
+                        <h3>menjadi master catur</h3>
+                        <span>Rp 30.000</span>
+                    </div>
+                    <div class="menu-info rating">
+                        <a href="#" class="cart-menu tambah-cart"
+                         data-img="./book1.png"
+                         data-title="menjadi master catur" 
+                         data-price="Rp 30.000">
+                            <i class="fa-solid fa-cart-plus"></i>tambah ke keranjang
+                        </a>
+                        <div class="menu-stars">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star-half-stroke"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="./book2.jpg" alt="gambar menu" class="detail-menu" width="300" 
+                     data-img="./book2.jpg"
+                     data-title="strategi catur elit"
+                     data-price="Rp 40.000"
+                     data-desc="cara kamu menjadi pemain profesional"
+                     data-rating="5">
+                    <div class="menu-info">
+                        <h3>strategi catur elit</h3>
+                        <span>Rp 40.000</span>
+                    </div>
+                    <div class="menu-info rating">
+                        <a href="#" class="cart-menu tambah-cart"
+                         data-img="./book2.jpg"
+                         data-title="strategi catur elit" 
+                         data-price="Rp 40.000">
+                            <i class="fa-solid fa-cart-plus"></i> tambah ke keranjang
+                        </a>
+                        <div class="menu-stars">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="./book3.jpg" alt="gambar menu"  class="detail-menu" width="300"
+                     data-img="./book3.jpg"
+                     data-title="seni catur grandmaster"
+                     data-price="Rp 45.000"
+                     data-desc="ubah gaya permainmu menjadi seperti grandmaster"
+                     data-rating="4.5">
+                    <div class="menu-info">
+                        <h3>seni catur grandmaster</h3>
+                        <span>Rp 45.000</span>
+                    </div>
+                    <div class="menu-info rating">
+                        <a href="#" class="cart-menu tambah-cart"
+                         data-img="./book3.jpg"
+                         data-title="seni catur grandmaster" 
+                         data-price="Rp 45.000">
+                            <i class="fa-solid fa-cart-plus"></i> tambah ke keranjang
+                        </a>
+                        <div class="menu-stars">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star-half-stroke"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="about">
+        <div class="container">
+            <p class="title">about us</p>
+            <h1>Tentang Toko Kami</h1>
+            <div class="row">            
+                <div class="about-teks">
+                        <h2>Satu Tempat untuk Sang Juara</h2>
+                        <br>
+                        <p>CaturPedia hadir sebagai destinasi utama bagi para pecinta catur, mulai dari pemula hingga pemain profesional. Kami menyediakan berbagai koleksi papan catur eksklusif, jam catur standar turnamen, hingga literatur strategi terlengkap untuk membantu Anda menguasai setiap langkah di atas papan.
+                        </p>
+                        <br>
+                        <p class="p2">
+                         Setiap produk kami dipilih dengan standar kualitas tinggi untuk memastikan kenyamanan dan ketahanan saat digunakan bertanding. Kami percaya bahwa perlengkapan yang berkualitas adalah investasi terbaik untuk mendukung perjalanan Anda menjadi seorang sang juara.
+                        </p>
+                </div>
+                <div class="img-box">
+                    <img src="./toko.png" alt="toko catur" >
+                    <div class="btn-map">
+                        <a href="https://maps.app.goo.gl/VPc4mJdBRFGB3E3aA"
+                        target="_blank" title="lihat map"><i class="fa-solid fa-location-dot"></i></a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="column">
+                    <h2>Alamat</h2>
+                    <p>jln patata no 617 bynong</p>
+                </div>
+                <div class="column">
+                    <h2>Kontak</h2>
+                    <a href="https://wa.me/6282152071339?text=Halo!%20saya%20mau%20tanya" target="_blank" class="contact-link">
+                        <p><i class="fa-brands fa-whatsapp"></i> +62 821 5207 1339</p>
+                    </a>
+                    
+                    <a href="mailto:aidilnizam15@gmail.com" class="contact-link">
+                        <i class="fa-solid fa-envelope"></i> aidilnizam15@gmail.com
+                    </a>
+                </div>
+                <div class="column">
+                    <h2>Jam Oprasional</h2>
+                    <p>Selasa - Sabtu : 09.00-21.00</p>
+                    <p>Minggu - senin: tutup</p>
+                </div>
+                <div class="column">
+                    <h2>ikut kami</h2>
+                   <p>
+                    <a href="https://youtu.be/iik25wqIuFo?si=qETmCqU0ZSnPFn3e" target="_blank" class="social">
+                        <i class="fa-brands fa-youtube"></i>
+                    </a>
+                    <a href="https://www.tiktok.com/@zaidan_173/video/7538791793035578629" target="_blank" class="social">
+                        <i class="fa-brands fa-tiktok"></i>
+                    </a>
+                    <a href="https://www.facebook.com/share/r/189k3BZaQ3/" target="_blank" class="social">
+                        <i class="fa-brands fa-facebook"></i>
+                    </a>
+                    <a href="https://www.instagram.com/caturpedia67" target="_blank" class="social">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+                   </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="credit">
+        <div class="container">
+         created by <b>Aidil Nizham</b> | &copy; 2026
+
+        </div>
+    </section>
+
+    <div class="modal-menu">
+        <div class="modal-box">
+            <div class="modal-header">
+                <h2>Detail Product</h2>
+                <a href="#" class="modal-close" title="close"><i class="fa-solid fa-xmark"></i></a>
+            </div>
+            <div class="modal-body">
+                <img src="./set.png" alt="gambar barang" >
+                 <div class="deskripsi">
+                    <h3>set papan catur</h3>
+                    <p>Lorem ipsum dolor,
+                        sit amet consectetur adipisicing elit.
+                        Dignissimos eligendi doloribus culpa. Molestiae at
+                        eligendi eius dolore repudiandae ea amet.</p>
+                    <div class="menu-rating" id="modal-rating"></div>
+                    <h4>Rp 200.00</h4>
+                    <a href="#" class="cart-modal tambah-cart"
+                     data-img="./set.png"
+                     data-title="Set Papan Catur" 
+                     data-price="Rp 200.000">
+                     <i class="fa-solid fa-cart-plus">
+                     </i> tambah ke keranjang</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="shop.js"></script>
+</body>
+</html>

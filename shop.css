@@ -1,0 +1,877 @@
+@import url('https://fonts.googleapis.com/css2?family=Onest:wght@100..900&display=swap');
+
+html{
+    scrollbar-width: none;
+}
+
+:root {
+    --primary-color : #d4b165 ;
+    --text-color : #504e4e ;
+    --btn-color :  #8e1537;
+    --secondary : rgb(22, 26, 142);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: "Onest", sans-serif;
+}
+
+section, main {
+    scroll-margin-top: 80px;
+}
+
+
+
+
+nav .navbar{
+    display: flex;
+    justify-content: space-between;
+    
+    max-width: 1150px;
+    align-items: center;
+    margin: auto;
+    height: 80px;
+}
+
+.navbar .nav-brand h2 {
+    display: inline-block;
+    font-size: 35px;
+    font-weight: 700;
+    color: var(--primary-color)
+   
+}
+
+
+
+
+.nav-menu li{
+    display: inline-block;
+    margin: 0 20px ;
+}
+
+.nav-menu li a {
+    display: inline-block;
+    font-weight: 600;
+    font-size: large;
+    color:var(--text-color);
+    padding-top: 10px;
+
+}
+
+.nav-menu li a::after {
+    content: "";
+    display: block;
+    border-bottom: 2px solid var(--primary-color) ;
+    padding-bottom: 7px;
+    transform: scaleX(0);
+    transition: .2s linear;
+ 
+}
+
+.nav-menu li a:hover:after {
+    transform: scaleX(0.8);
+}
+
+.navbar .nav-btn a {
+    color: var(--btn-color);
+    margin: 0 7px;
+    font-size: large;
+}
+.navbar .nav-btn a:hover {
+    color: var(--secondary);
+}
+
+nav{
+    position: sticky;
+    top: 0;
+    z-index: 2;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.15);
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+    background-color: white;
+}
+
+.navbar .nav-brand {
+    display: flex;
+    align-items: center;
+}
+
+.nav-brand .btn-menu {
+    color: var(--primary-color);
+    margin-right: 3px;
+    font-size: 21px;
+    display: none;
+}
+
+nav .kotak-cari{
+    position: absolute;
+    right: 7%;
+    margin-top: 2px;
+    background-color: #333;
+    width: 350px;
+    height: 50px;
+    align-items: center;
+    display: flex;
+    transform: scaleZ(0);
+    opacity: 0;
+    visibility: hidden;
+    transform-origin: center;
+    transition: 0.2s;
+}
+
+nav .kotak-cari.active{
+    transform: scaleZ(1);
+    opacity: 1;
+    visibility: visible;
+}
+
+nav .kotak-cari input{
+    width: 100%;
+    height: 100%;
+    font-size: large;
+    padding-inline: 10px;
+    background-color: #333;
+    color: white;
+    border: none;
+    outline: none;
+}
+
+nav .kotak-cari input::placeholder{
+    color: #ccc;
+}
+
+nav .kotak-cari label{
+    color: white;
+    font-size: larger;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+nav .cart{
+    position: absolute;
+    right: 0;
+    height: 100vh;
+    background-color: #333;
+    width: 30%;
+    padding: 10px;
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: 0.4s;
+    overflow-y: auto;
+}
+
+nav .cart.active{
+    transform: scaleX(1);
+}
+
+nav .cart .item-brg img{
+    height: 70px;
+    border-radius: 6px;
+}
+
+nav .cart .cart-item{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+nav .cart .item-brg{
+    display: flex;
+    gap: 10px;
+    color: white;
+}
+
+nav .cart-item i{
+    color: var(--primary-color);
+    padding-top: 5px;
+    cursor: pointer;
+}
+
+nav .cart-item i:hover{
+    color: red;
+}
+
+main {
+    background-color: #efefef;
+}
+
+main .container{
+    max-width: 1200px;
+    width: 90%;
+    display: flex;
+    margin: auto;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    gap: 40px;
+    min-height: calc(100vh - 80px);
+}
+
+main img {
+    width: 45%;
+    max-width: 500px;
+    height: auto;
+    object-fit: contain;
+
+  
+}
+
+main .tagline {
+    padding-left: 20px;;
+}
+
+.tagline .tag {
+    font-size: 20px;
+    font-weight: 700;
+    color: var(--secondary);
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+.tagline h1 {
+    font-size: 50px;
+    font-weight: 700;
+    color: var(--secondary);
+    line-height: 60px;
+    margin-bottom: 25px;
+}
+
+.tagline .deksripsi {
+    margin-bottom: 30px;
+    line-height: 30px;
+    
+}
+
+.tagline .btn-order {
+    display: inline-block;
+    background-color: var(--btn-color);
+    color: white;
+    padding: 14px 17px;
+    border-radius: 20px;
+    font-weight: 600;
+    cursor: pointer;
+    transform: translateY(0px);
+    transition: 0.3s ease-out;
+}
+
+.tagline .btn-order:hover {
+    transform: translateY(2px);
+    color:var(--primary-color);
+}
+
+#menu{
+    background-color: #efefef;
+}
+
+#menu .container{
+    max-width: 1150px;
+    margin: auto;
+    padding: 40px 0 60px;
+    text-align: center;
+
+}
+
+#menu .title{
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    color: var(--primary-color);
+}
+
+#menu h2{
+    font-size: 50px;
+    margin-bottom: 40px;
+    font-weight: 700;
+    color: var(--secondary);
+}
+
+#menu .gallery {
+    display: grid;
+    row-gap: 20px;
+    column-gap: 30px;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.gallery .card {
+    border: 1px solid #acacac;
+    border-radius: 6px;
+    padding-bottom: 10px;
+    transition: .3s ease;
+}
+
+.gallery .card:hover{
+    transform: scale(1.05);
+}
+.gallery .card img{
+   width: 100%;
+    margin-bottom: 10px;
+    border-radius: 6px 6px 0 0;
+    cursor: pointer;
+}
+
+.gallery .card .menu-info {
+    display: flex;
+    justify-content: space-between;
+    gap: 5px;
+    padding: 5px 10px;
+}
+
+.menu-info h3 {
+    text-align: left;
+    margin-right: 5px;
+    color: var(--text-color);
+}
+
+.menu-info span {
+    color: var(--text-color);
+    font-weight: bold;
+    text-align: left;
+    padding-top: 2px;
+    display: inline-block;
+    width: fit-content;
+    white-space: nowrap;
+}
+
+.menu-info .cart-menu {
+    background-color: var(--btn-color);
+    padding: 10px;
+    border-radius: 4px;
+    color: white;
+}
+
+.menu-info i{
+    font-size: small;
+}
+
+.menu-info .menu-stars {
+    color: var(--primary-color);
+}
+
+.gallery .card .rating{
+    margin-top: 15px;
+    align-items: center;
+}
+
+#about {
+    background-color: #efefef;
+}
+
+#about .container{
+    max-width: 1150px;
+    margin: auto;
+    padding: 40px 0 60px;
+}
+
+#about .title{
+    text-align: center;
+    font-size: 20px;
+    margin-bottom: 20px;
+    font-weight: 700;
+    color: var(--primary-color);
+}
+
+#about h1 {
+    text-align: center;
+    font-size: 50px;
+    color: var(--secondary);
+    font-weight: 700;
+    margin-bottom: 50px;
+}
+
+#about .row {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 30px;
+}
+
+.row .about-teks{
+    width: 55%;
+    margin-right: 50px;
+    font-weight: 400;
+}
+
+.row .about-teks .p2{
+    margin-bottom: 30px;
+}
+
+
+.row .img-box{
+    width: 40%;
+    background-color: rgb(231, 231, 231);
+    padding: 12px 10px 5px;
+    position: relative;
+    overflow: hidden;
+}
+.row .img-box img{
+    width: 100%;
+}
+
+.img-box .btn-map{
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    z-index: 1;
+    transition: 0.3s;
+}
+
+.img-box .btn-map a{
+    color: white;
+    padding: 10px;
+    display: block;
+    font-size: 40px;
+    border-radius: 50%;
+    background-color: rgba(0, 0, 0, .7);
+    transition: 0.3s;
+}
+
+.img-box .btn-map a:hover{
+    transform: scale(1.07);
+    background-color: rgba(255, 255, 255, .8);
+    color: var(--btn-color);
+}
+
+#contact{
+    background-color: #333;
+    color: white;
+}
+
+#contact .container{
+    max-width: 1150px;
+    margin: auto;
+    padding: 50px 0;
+}
+
+#contact .container .row {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 30px;
+}
+
+#contact .container .row .column{
+    width: 20%;
+}
+
+#contact .container .row .column h2{
+    color: var(--primary-color);
+    margin-bottom: 20px;
+}
+
+#contact .container .row .column a:hover{
+    color: #cfcfcf;
+}
+
+#contact .container .row .column .social{
+    color:white ;
+    margin-right: 20px
+}
+
+#contact .container .row .column p{
+    margin-bottom: 10px;
+}
+
+#contact .column a.contact-link{
+    text-decoration: none;
+    color: white;
+}
+
+.credit{
+    background-color: black;
+    color: white;
+    text-align: center;
+
+}
+
+.credit .container {
+    padding: 10px 0;
+}
+
+
+.modal-menu{
+    position: fixed;
+    z-index: 9999;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, .7);
+    display: none;
+}
+
+.modal-menu .modal-box{
+    position: relative;
+    background-color: white;
+    width: 70%;
+    padding: 20px 20px 30px;
+    margin: 12% auto;
+    animation: tampilModal 0.8s ease;
+}
+
+
+.cart-footer {
+    padding: 20px 10px;
+    border-top: 2px solid #555;
+    margin-top: 20px;
+}
+
+.cart-total {
+    color: white;
+    font-size: 18px;
+    margin-bottom: 15px;
+    
+}
+
+.btn-checkout {
+    display: block;
+    background: var(--primary-color);
+    color: var(--text-color);
+    text-align: center;
+    padding: 15px;
+    border-radius: 8px;
+    font-weight: bold;
+    font-size: 16px;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.btn-checkout:hover {
+    background: #b89450;
+    transform: translateY(-2px);
+}
+@keyframes tampilModal{
+    from{
+        transform: scale(0);
+    }
+
+    to {
+        transform: scale(1);
+    }
+}
+
+.modal-box .modal-header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    color: var(--secondary);
+}
+
+.modal-box .modal-body{
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 20px;
+}
+
+.modal-header .modal-close {
+    color: var(--btn-color);
+}
+
+.modal-body .deskripsi h3 { 
+    margin-bottom: 20px;
+    color: rgb(42, 41, 41);
+}
+
+.modal-body .deskripsi p{
+    margin-bottom: 20px;
+}
+
+.modal-body .deskripsi .menu-rating{
+    color: var(--primary-color);
+    margin-bottom: 20px;
+}
+
+.modal-body .deskripsi h4{
+    color: var(--btn-color);
+    margin-bottom: 15px;
+}
+
+.modal-body .deskripsi .cart-modal{
+    background-color: var(--btn-color);
+    color: white;
+    padding: 10px;
+    border-radius: 4px;
+}
+
+.modal-body img{
+    height: 200px;
+}
+
+.btn-checkout.disabled{
+    opacity: 0.5;
+    pointer-events: none;
+    cursor: not-allowed;
+
+}
+
+
+
+@media screen and (min-width: 1400px){
+    .tagline .tag {
+        font-size: 25px;
+    }
+
+    .tagline h1 {
+        font-size: 60px;
+        margin-right: 30px;
+    }
+
+    .tagline .deksripsi{
+        font-size: 20px;
+    }
+
+    .tagline .btn-order{
+        font-size: 20px;
+    }
+
+    main .container{
+        width: 100%;
+        min-width:1400px;
+
+    }
+    
+}
+
+@media screen and (max-width: 567px) {
+    .navbar .nav-brand h2 {
+        font-size: 25px;
+    }
+
+    nav .navbar {
+        padding: 0 10px;
+    }   
+    
+    .navbar .nav-menu {
+        position: fixed;
+        height:90%;
+        width: 50%;
+        top: 80px;
+        background-color: #333;
+        left: -100%;
+        transition: 0.5s;
+    }
+
+    .navbar .nav-menu a {
+        color: white;
+    }
+
+    .nav-menu li {
+        display: block;
+    }
+
+    .nav-menu li a::after {
+        transform-origin: left;
+    }
+
+    .nav-menu li a:hover::after{
+        transform: scaleX(1);
+    }
+    .nav-brand .btn-menu {
+        display: block;
+    }
+    .navbar .nav-menu.active {
+        left: 0;
+    }
+    main .container {
+        display: block;
+        width: 100%;
+        padding: 0 15px 30px;
+        padding: 10px;
+        text-align: center;
+        height: 100vh;
+    }
+    main .tagline {
+        padding-bottom: 10px;
+        margin-top: 10px;
+        padding-left:0;
+
+    }
+
+    .tagline .tag {
+        font-size: 20px;
+        margin-bottom: 20px;
+        margin-top: 70px;
+        margin-left: 10px;
+        margin-right: 10px;
+    
+    }
+
+    .tagline h1 {
+        font-size: 32px;
+        line-height: 45px;
+        margin-bottom: 20px;
+    }
+
+    .tagline .deksripsi {
+        font-size: 15px;
+        margin-bottom: 20px;
+        text-align: justify;
+        line-height:  20px;
+        padding: 0 30px;
+    }
+
+
+    main img {
+        width: 65%;
+        margin-bottom: -70px;
+        transform: translateY(0);
+    }
+
+    #menu .container{
+        width: 100%;
+        padding: 30px 10px;
+    }
+
+    #menu h2{
+        font-size: 38px;
+    }
+
+    #menu .gallery{
+        grid-template-columns: 1fr;
+        padding: 0 30px;
+    }
+
+    #about .container{
+        width: 100%;
+        padding: 30px 10px;
+    }
+
+    #about h1{
+        font-size: 38px;
+        margin-bottom: 30px
+    }
+
+    #about .row{
+        display: block;
+        text-align: justify;
+    }
+
+    #about .row .about-teks h2{
+        text-align: center;
+    }
+    
+    #about .row .about-teks{
+        width: 100%;
+        margin-bottom: 38px;
+        
+
+    }
+    
+    #about .row .img-box{
+        width: 100%;
+        margin-bottom: 30px;
+    }
+
+    #contact .container{
+        width: 100%;
+        padding: 30px 10px;
+    }
+
+    #contact .container .row {
+        flex-wrap: wrap;
+    }
+
+    #contact .container .row .column {
+        width: 47%;
+        margin: 10px 0;
+    }
+
+    nav .cart{
+        width: 60%;
+        font-size: 85%;
+    }
+
+    nav .cart .cart-item img{
+        height: 50px;
+    }
+
+    .modal-menu .modal-box{
+        width: 90%;
+        margin: 10px auto;
+    }
+
+    .modal-menu .modal-body{
+        display: block;
+    }
+
+    .modal-body img{
+        height: 180px;
+        margin-bottom: 10px;
+       
+    }
+}    
+
+@media screen and (max-width: 448px){
+ #contact .container .row .column h2 {
+        font-size: 18px;
+        margin-bottom: 10px;
+    }
+
+  
+    #contact .container .row .column {
+        font-size: 14px;
+        width: 80%; 
+        margin-bottom: 10px;
+    }
+    #contact .container .row .column p{
+        margin-bottom: 10px;
+    }
+    
+    #contact .container .row .column .social {
+        font-size: 16px;
+        margin-right: 15px;
+    }
+
+    nav .cart{
+        width: 60%;
+        font-size: 85%;
+    }
+
+    nav .cart .cart-item img{
+        height: 50px;
+    }
+}
+
+@media screen and (max-width: 400px){
+    .menu-info i{
+        font-size: 10px;
+    }
+}
+
+@media screen and (max-width: 366px) {
+    
+    .tagline .tag {
+        font-size: 16px;
+        margin-bottom: 20px;
+        margin-top: 70px;
+        margin-left: 10px;
+        margin-right: 10px;
+    
+    }
+
+    .tagline h1 {
+        font-size: 26px;
+        line-height: 45px;
+        margin-bottom: 20px;
+    }
+
+    .tagline .deksripsi {
+        font-size: 12px;
+        margin-bottom: 20px;
+        text-align: justify;
+        line-height:  20px;
+    }   
+}
