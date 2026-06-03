@@ -1,0 +1,55 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-family: "Poppins" , sans-serif;
+}
+
+body{
+    display: grid;
+    min-height: 100vh;
+    place-items: center;
+    background-color:#2d3443 ;
+    text-decoration: none;
+}
+
+.border{
+   width: 90%;
+   max-width: 500px;
+   padding: 40px;
+   background:#2d3443;
+   border-radius: 30px;
+   box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+   text-align: center;
+
+}
+.gif img{
+    width: 100%;
+    border-radius: 10px;
+}
+
+.gif{
+    width: 90%;
+    margin: 0 auto;
+
+}
+
+.kembali{
+    display: inline-block;
+    padding: 5px 10px 5px;
+    font-size: 14px;
+    border-radius: 10px;
+    background-color: #4caf4f7b;
+    color: rgba(238, 238, 238, 0.76);
+    font-weight: bold;
+    cursor: pointer;
+}
+.kembali a{
+    color: inherit;
+    text-decoration: none;
+}
+
+.kembali ul{
+    list-style: none;
+}

@@ -1,0 +1,123 @@
+ @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;900&display=swap" rel="stylesheet');
+
+*{
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+}
+
+.container{
+    height: 100vh;
+    background: #eee;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: column;
+    padding-bottom: 60px;
+}
+
+.container form{
+    background: #fff;
+    border-radius: 6px;
+    box-shadow: 0 10px 15px rgba(0, 0, 0, .1);
+    padding: 20px;
+    width: 600px;
+}
+
+.container form .inputBox{
+    margin-top: 20px;
+}
+
+.container form .inputBox span{
+    display: block;
+    color: black;
+    padding-top: 5px;
+}
+
+.container form .inputBox input{
+    width: 100%;
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid rgba(0, 0, 0, .3);
+    color: #444;
+}
+
+.container form .submit-btn{
+    width: 100%;
+    background: linear-gradient(45deg, #0f0f0f, #3a3a3a, #0f0f0f);
+    margin-top: 20px;
+    padding: 10px;
+    font-size: 20px;
+    color: white;
+    border-radius: 10px;
+    transform: translateY(0);
+    cursor: pointer;
+    transition: .2s linear;
+}
+
+.container form .submit-btn:hover{
+    transform: translateY(4px);
+    opacity: 0.8;
+}
+
+@media (max-width: 768px) {
+    .container {
+        padding: 20px;
+        padding-bottom: 40px;
+    }
+    
+    .container form {
+        width: 100%;
+        max-width: 400px;
+        padding: 20px;
+        padding-top: 20px; 
+        margin: 0;
+    }
+    
+    .container .card-container {
+        width: 100%;
+        max-width: 350px;
+        height: 200px;
+        margin-bottom: -180px; 
+    }
+    
+    
+    .container .card-container .front,
+    .container .card-container .back {
+        height: 80%;
+        width: 100%;
+        padding: 15px;
+    }
+    
+    .container .card-container .front .card-number-box {
+        font-size: 18px;
+        padding: 20px 0;
+    }
+    
+  
+    .container form .inputBox input,
+    .container form .inputBox select {
+        padding: 15px;
+        font-size: 16px; 
+    }
+    
+    .container form .submit-btn {
+        padding: 18px;
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 480px) {
+    .container .card-container {
+        height: 200px;
+        margin-bottom: -160px;
+    }
+    
+    .container form {
+        padding-top: 10px;
+    }
+}

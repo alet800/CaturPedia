@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="addres.css">
+</head>
+<body>
+    <div class="container">
+        <form action="payment.html">
+            <div class="inputBox">
+                <span>Nama</span>
+                <input type="text" maxlength="50" class="card-nama-input">
+            </div>
+            <div class="inputBox">
+                <span>Email</span>
+                <input type="email" class="card-email-input">
+            </div>
+            <div class="inputBox">
+                <span>Alamat</span>
+                <input type="text" maxlength="50" class="card-alamat-input">
+            </div>
+            <div class="inputBox">
+                <span>Nomer whatsapp</span>
+                <input type="text" maxlength="25" class="card-wa-input">
+            </div>
+            <input type="submit" value="LANJUT" class="submit-btn">
+        </form>
+    </div>
+    
+    <script>
+    document.querySelector('form').onsubmit = function(){
+        const nama = document.querySelector('.card-nama-input').value.trim().length;
+        const email = document.querySelector('.card-email-input').value.trim().length;
+        const alamat = document.querySelector('.card-alamat-input').value.trim().length;
+        const wa = document.querySelector('.card-wa-input').value.replace(/[^0-9]/g,'').length;
+        
+        if(nama < 2 || email < 6 || alamat < 4 || wa < 10) {
+            alert('Lengkapi semuanya!');
+            return false;
+        }
+        return true;
+    };
+
+    document.querySelector('.card-wa-input').addEventListener('input', e => {
+        e.target.value = e.target.value.replace(/[^0-9]/g, '');
+    });
+
+    document.querySelector('.card-nama-input').oninput = (e) => {
+
+        let value = e.target.value.replace(/[^A-Za-z\s]/g,'');
+
+        value = value.slice(0,50);
+
+        e.target.value = value;
+
+        document.querySelector('.cvv-box').innerText = value;
+
+    }
+    </script>
+
+</body>
+</html>
